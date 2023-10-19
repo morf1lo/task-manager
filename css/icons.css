@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4704ff, #4405f1, #3d04d8, #27018f, #170253, #08001f);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    font-family: Calibri;
+    font-size: 26px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Calibri;
+    font-size: 20px;
+    padding: 6px 1px;
+    margin-top: 15px;
+    border-bottom: 1px solid #fff;
+    display: block;
+}

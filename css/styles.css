@@ -1,0 +1,242 @@
+@media (max-width: 768px) {
+    #add-task-field {
+        min-width: 220px !important;
+        max-width: 380px !important;
+        min-height: 90px !important;
+        max-height: 180px !important;
+    }
+}
+
+@media (max-width: 668px) {
+    .task-container {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 468px) {
+    .btn {
+        padding: 20px 75px !important;
+    }
+
+    #add-task-field {
+        min-width: 180px !important;
+        max-width: 250px !important;
+        min-height: 80px !important;
+        max-height: 120px !important;
+    }
+
+    .task-container {
+        top: 350px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        padding: 18px 60px !important;
+    }
+    
+    #add-task-field {
+        min-width: 130px !important;
+        max-width: 210px !important;
+        min-height: 50px !important;
+        max-height: 100px !important;
+    }
+
+    .task-container {
+        top: 330px !important;
+    }
+}
+
+@media (max-width: 280px) {
+    .btn {
+        padding: 16px 45px !important;
+    }
+
+    #add-task-field {
+        min-width: 100px !important;
+        max-width: 180px !important;
+        min-height: 50px !important;
+        max-height: 80px !important;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #ff4000;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: #111;
+}
+
+#task-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+
+.btn {
+    user-select: none;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+    padding: 25px 80px;
+    background: #ff4000;
+    color: #f1f1f1;
+    outline: none;
+    border: 3px solid #ff4000;
+    border-radius: 50px;
+    font-family: 'Arial';
+    font-size: 24px;
+    overflow: hidden;
+    transition: .55s ease;
+    z-index: 1;
+}
+
+.btn:hover {
+    color: #ff4000;
+    background: transparent;
+}
+
+#add-task-field {
+    position: absolute;
+    top: 230px;
+    width: 350px;
+    height: 150px;
+    padding: 10px 15px;
+    min-width: 240px;
+    max-width: 550px;
+    min-height: 100px;
+    max-height: 220px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: #f0f0f0;
+    color: #1a1a1a;
+}
+
+.task-container {
+    display: flex;
+    position: relative;
+    top: 400px;
+    width: 70%;
+    justify-content: center;
+}
+
+#task-list {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+}
+
+.option-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.option-container p {
+    max-width: 80%;
+    word-wrap: break-word;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial';
+    letter-spacing: 1.4px;
+}
+
+.task-completed-container {
+    display: flex;
+    position: relative;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.custom-checkbox {
+    width: 32px;
+    height: 32px;
+    display: inline;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 1px solid #7d7d7d;
+    border-radius: 5px;
+}
+
+.custom-checkbox:hover {
+    border: 2px solid #7d7d7d;
+}
+
+.custom-checkbox:focus {
+    border: 2px solid #8b8b8b;
+}
+
+.custom-checkbox:checked {
+    background: url('../img/checkmark.svg') center no-repeat #00cc66;
+    border: none;
+}
+
+.delete-image {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: inline;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.link-container {
+    display: flex;
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.authors-link {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #4503fc, #27018f, #08001f);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Tahoma';
+}
