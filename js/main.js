@@ -1,6 +1,6 @@
 class TaskManager {
     constructor() {
-        this.taskForm = document.getElementById('task-form');
+        this.taskForm = document.getElementById('adding-task-form');
         this.taskList = document.getElementById('task-list');
         this.loadTasks();
         this.execute();
@@ -59,7 +59,7 @@ class TaskManager {
     createTaskElement(tasktext, isCompleted) {
         const self = this;
 
-        const taskInput = document.getElementById('add-task-field');
+        const taskInput = document.getElementById('adding-task-field');
         const taskText = taskInput.value.trim();
 
         const text = tasktext ? tasktext : taskText;

@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    #add-task-field {
+    #adding-task-field {
         min-width: 220px !important;
         max-width: 380px !important;
         min-height: 90px !important;
@@ -16,7 +16,7 @@
         padding: 20px 70px !important;
     }
 
-    #add-task-field {
+    #adding-task-field {
         min-width: 180px !important;
         max-width: 250px !important;
         min-height: 80px !important;
@@ -25,7 +25,6 @@
 
     .task-container {
         width: 90% !important;
-        top: 350px !important;
     }
 }
 
@@ -48,15 +47,11 @@
         display: none;
     }
     
-    #add-task-field {
+    #adding-task-field {
         min-width: 130px !important;
         max-width: 210px !important;
         min-height: 50px !important;
         max-height: 100px !important;
-    }
-
-    .task-container {
-        top: 330px !important;
     }
 }
 
@@ -65,7 +60,7 @@
         padding: 16px 45px !important;
     }
 
-    #add-task-field {
+    #adding-task-field {
         min-width: 100px !important;
         max-width: 150px !important;
         min-height: 50px !important;
@@ -105,16 +100,22 @@ body {
     height: 100%;
     align-items: center;
     background: #111;
+    gap: 200px;
 }
 
-#task-form {
-    display: flex;
+.form-container {
     position: relative;
+    top: 100px;
+}
+
+#adding-task-form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
-    top: 100px;
+    height: auto;
+    gap: 50px;
 }
 
 .add-task {
@@ -158,9 +159,7 @@ body {
     }
 }
 
-#add-task-field {
-    position: absolute;
-    top: 160px;
+#adding-task-field {
     width: 350px;
     height: 150px;
     padding: 10px 15px;
@@ -179,7 +178,6 @@ body {
 .task-container {
     display: flex;
     position: relative;
-    top: 400px;
     width: 70%;
     justify-content: center;
 }
@@ -253,6 +251,11 @@ body {
     margin-left: auto;
     margin-top: 10px;
     margin-right: 20px;
+    transition: .2s;
+}
+
+.delete-image:hover {
+    transform: rotateX(25deg);
 }
 
 .link-container {
