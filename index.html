@@ -13,14 +13,19 @@
 <body>
 
     <div class="link-container">
-        <a href="icons.html" target="_blank" class="authors-link">Icons</a>
+        <a href="icons.html" target="_blank">
+            <button class="pulse-btn icons-link">Icons</button>
+        </a>
     </div>
 
     <div class="main">
         <div class="container">
             <div>
                 <form action="#" id="task-form">
-                    <button type="submit" id="add-task" class="btn">Add a task</button>
+                    <button type="submit" id="add-task" class="pulse-btn add-task">
+                        <input type="image" src="img/plus.svg" name="plus" id="plus">
+                        <span>Add a task</span>
+                    </button>
                     <textarea name="" id="add-task-field" cols="30" rows="10"></textarea>
                 </form>
             </div>
@@ -34,6 +39,7 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/pulse-buttons.js"></script>
 </body>
 
 </html>

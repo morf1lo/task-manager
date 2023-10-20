@@ -3,6 +3,7 @@ class TaskManager {
         this.taskForm = document.getElementById('task-form');
         this.taskList = document.getElementById('task-list');
         this.loadTasks();
+        this.execute();
     }
 
     execute() {
@@ -119,5 +120,4 @@ class TaskManager {
     }
 }
 
-const taskManager = new TaskManager();
-taskManager.execute();
+new TaskManager();

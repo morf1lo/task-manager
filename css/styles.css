@@ -14,15 +14,15 @@
 }
 
 @media (max-width: 468px) {
-    .btn {
-        padding: 20px 75px !important;
+    .add-task {
+        padding: 20px 70px !important;
     }
 
     #add-task-field {
         min-width: 180px !important;
         max-width: 250px !important;
         min-height: 80px !important;
-        max-height: 120px !important;
+        max-height: 110px !important;
     }
 
     .task-container {
@@ -31,8 +31,8 @@
 }
 
 @media (max-width: 320px) {
-    .btn {
-        padding: 18px 60px !important;
+    .add-task {
+        padding: 18px 50px !important;
     }
     
     #add-task-field {
@@ -48,15 +48,19 @@
 }
 
 @media (max-width: 280px) {
-    .btn {
+    .add-task {
         padding: 16px 45px !important;
+    }
+
+    .add-task span {
+        display: none;
     }
 
     #add-task-field {
         min-width: 100px !important;
-        max-width: 180px !important;
+        max-width: 150px !important;
         min-height: 50px !important;
-        max-height: 80px !important;
+        max-height: 70px !important;
     }
 }
 
@@ -102,27 +106,46 @@ body {
     height: 100px;
 }
 
-.btn {
+.add-task {
+    display: flex;
+    align-items: center;
     user-select: none;
     position: relative;
     top: 100px;
     cursor: pointer;
-    padding: 25px 80px;
+    padding: 25px 75px;
     background: #ff4000;
-    color: #f1f1f1;
+    color: #111;
     outline: none;
-    border: 3px solid #ff4000;
-    border-radius: 50px;
+    border: none;
+    border-radius: 20px;
     font-family: 'Arial';
     font-size: 24px;
     overflow: hidden;
-    transition: .55s ease;
     z-index: 1;
+    gap: 5px;
 }
 
-.btn:hover {
-    color: #ff4000;
-    background: transparent;
+.add-task:hover {
+    background: #ff4000ef;
+}
+
+.pulse {
+    position: absolute;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    transform: scale(0);
+    background: #dfdfdf;
+    animation: pulse 1s ease-out;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
 }
 
 #add-task-field {
@@ -166,6 +189,7 @@ body {
 }
 
 .option-container p {
+    margin-left: 10px;
     max-width: 80%;
     word-wrap: break-word;
     color: #fff;
@@ -231,12 +255,18 @@ body {
     justify-content: center;
 }
 
-.authors-link {
-    text-decoration: none;
+.icons-link {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
     color: #fff;
     background: linear-gradient(to right, #4503fc, #27018f, #08001f);
     padding: 10px 25px;
+    outline: none;
     border: none;
     border-radius: 50px;
     font-family: 'Tahoma';
+    font-size: 16px;
+    overflow: hidden;
+    z-index: 1;
 }
