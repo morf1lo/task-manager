@@ -9,6 +9,10 @@
     .task-container {
         width: 80% !important;
     }
+
+    .task-item {
+        max-width: 50% !important;
+    }
 }
 
 @media screen and (max-width: 468px) {
@@ -196,14 +200,14 @@ body {
     margin-bottom: 20px;
 }
 
-.option-container p {
+.task-item {
     margin-left: 10px;
-    max-width: 80%;
+    max-width: 70%;
     color: #fff;
     font-size: 18px;
     font-family: 'Arial';
     word-wrap: break-word;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
 }
 
 .task-completed-container {
