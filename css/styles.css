@@ -202,6 +202,7 @@ body {
     color: #fff;
     font-size: 18px;
     font-family: 'Arial';
+    word-wrap: break-word;
     letter-spacing: 1.4px;
 }
 
