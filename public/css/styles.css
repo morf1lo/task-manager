@@ -242,7 +242,7 @@ body {
 }
 
 .custom-checkbox:checked {
-    background: url('../img/checkmark.svg') center no-repeat #00cc66;
+    background: url('../assets/checkmark.svg') center no-repeat #00cc66;
     border: none;
 }
 

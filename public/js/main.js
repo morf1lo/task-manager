@@ -86,7 +86,7 @@ class TaskManager {
             taskValue.textContent = text;
     
             deleteImage.classList.add('delete-image');
-            deleteImage.src = 'img/delete.svg';
+            deleteImage.src = 'assets/delete.svg';
             deleteImage.draggable = false;
             deleteImage.onclick = function() {
                 self.deleteTask(optionContainer);
