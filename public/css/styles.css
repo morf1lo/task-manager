@@ -1,11 +1,4 @@
 @media screen and (max-width: 768px) {
-    #adding-task-field {
-        min-width: 220px !important;
-        max-width: 380px !important;
-        min-height: 90px !important;
-        max-height: 180px !important;
-    }
-
     .task-container {
         width: 80% !important;
     }
@@ -20,15 +13,12 @@
         padding: 20px 70px !important;
     }
 
-    #adding-task-field {
-        min-width: 180px !important;
-        max-width: 250px !important;
-        min-height: 80px !important;
-        max-height: 110px !important;
-    }
-
     .task-container {
         width: 90% !important;
+    }
+
+    #adding-task-field {
+        width: 300px !important;
     }
 }
 
@@ -37,8 +27,20 @@
         padding: 20px 50px !important;
     }
 
+    .add-task span {
+        display: none;
+    }
+
     .task-container {
         width: 100% !important;
+    }
+
+    #adding-task-field {
+        width: 250px !important;
+    }
+
+    .icons-link {
+        padding: 7px 18px !important;
     }
 }
 
@@ -47,15 +49,8 @@
         padding: 18px 50px !important;
     }
 
-    .add-task span {
-        display: none;
-    }
-    
     #adding-task-field {
-        min-width: 130px !important;
-        max-width: 210px !important;
-        min-height: 50px !important;
-        max-height: 100px !important;
+        width: 220px !important;
     }
 }
 
@@ -65,10 +60,7 @@
     }
 
     #adding-task-field {
-        min-width: 100px !important;
-        max-width: 150px !important;
-        min-height: 50px !important;
-        max-height: 70px !important;
+        width: 170px !important;
     }
 }
 
@@ -129,8 +121,8 @@ body {
     position: relative;
     cursor: pointer;
     padding: 25px 75px;
-    background: #ff4000;
-    color: #111;
+    background: linear-gradient(to right, #4503fc, #27018f, #130147);
+    color: #000;
     outline: none;
     border: none;
     border-radius: 20px;
@@ -141,42 +133,41 @@ body {
     gap: 5px;
 }
 
-.add-task:hover {
-    background: #ff4000ef;
-}
-
 .pulse {
     position: absolute;
     outline: none;
     border: none;
     border-radius: 50%;
     transform: scale(0);
-    background: #dfdfdf;
-    animation: pulse 1s ease-out;
+    background: #caffff;
+    animation: pulse .8s ease-out;
     z-index: -1;
 }
 
 @keyframes pulse {
     to {
-        transform: scale(3);
+        transform: scale(2.5);
         opacity: 0;
     }
 }
 
 #adding-task-field {
+    user-select: none;
     width: 350px;
-    height: 150px;
-    padding: 10px 15px;
-    min-width: 240px;
-    max-width: 550px;
-    min-height: 100px;
-    max-height: 220px;
-    border: none;
+    height: 40px;
+    padding: 5px 18px;
     outline: none;
+    border: none;
+    border-radius: 4px;
     font-size: 20px;
     font-family: 'Trebuchet MS', sans-serif;
     background: #f0f0f0;
     color: #1a1a1a;
+    transition: .12s;
+}
+
+#adding-task-field:focus {
+    outline: 4px solid #b9e0ff;
 }
 
 .task-container {
