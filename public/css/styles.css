@@ -155,19 +155,15 @@ body {
     user-select: none;
     width: 350px;
     height: 40px;
-    padding: 5px 18px;
+    padding: 6px 25px;
     outline: none;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 20px;
     font-family: 'Trebuchet MS', sans-serif;
-    background: #f0f0f0;
-    color: #1a1a1a;
+    background: #525252;
+    color: #acacac;
     transition: .12s;
-}
-
-#adding-task-field:focus {
-    outline: 4px solid #b9e0ff;
 }
 
 .task-container {
