@@ -22,7 +22,7 @@ class PulseButtons {
 
                 setTimeout(() => {
                     div.remove();
-                }, 800);
+                }, 1000);
             });
         });
     }

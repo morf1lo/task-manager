@@ -126,7 +126,7 @@ body {
     outline: none;
     border: none;
     border-radius: 20px;
-    font-family: 'Arial';
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 24px;
     overflow: hidden;
     z-index: 1;
@@ -140,13 +140,13 @@ body {
     border-radius: 50%;
     transform: scale(0);
     background: #caffff;
-    animation: pulse .8s ease-out;
+    animation: pulse 1s ease-out;
     z-index: -1;
 }
 
 @keyframes pulse {
     to {
-        transform: scale(2.5);
+        transform: scale(2.4);
         opacity: 0;
     }
 }
