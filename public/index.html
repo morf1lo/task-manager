@@ -5,16 +5,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/icon.png">
     <title>Your tasks :3</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/icon.png">
 </head>
 
 <body>
 
     <div class="link-container">
-        <a href="icons.html" target="_blank" draggable="false">
-            <button class="pulse-btn icons-link">Icons</button>
+        <a href="icons.html" draggable="false">
+            <button class="pulse-btn icons-link">
+                <input type="image" src="./assets/link.svg" id="link-img">
+                <span>Icons</span>
+            </button>
         </a>
     </div>
 
@@ -23,7 +26,7 @@
             <div class="form-container">
                 <form action="#" id="adding-task-form">
                     <button type="submit" id="add-task" class="pulse-btn add-task">
-                        <input type="image" src="assets/plus.svg" name="plus" id="plus">
+                        <input type="image" src="./assets/plus.svg" id="plus">
                         <span>Add task</span>
                     </button>
                     <input type="text" name="" id="adding-task-field" placeholder="New task..." autocomplete="off">
